@@ -6,5 +6,5 @@
 
 module.exports = {
   siteMetadata: {},
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
