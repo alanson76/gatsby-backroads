@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 //local styles
 import styles from "../css/footer.module.css"
@@ -14,9 +14,9 @@ function Footer() {
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
-            <Link to={item.path} key={index}>
+            <AniLink fade to={item.path} key={index}>
               {item.text}
-            </Link>
+            </AniLink>
           )
         })}
       </div>
