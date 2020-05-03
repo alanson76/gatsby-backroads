@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { FaMoneyBillWave, FaMap } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
@@ -10,7 +9,6 @@ import styles from "../css/template.module.css"
 
 //components
 import Layout from "../components/Layout"
-import BlogList from "../components/Blog/BlogList"
 import StyledHero from "../components/StyledHero"
 
 const blogTemplate = ({ data }) => {
@@ -31,7 +29,7 @@ const blogTemplate = ({ data }) => {
             <img
               width="400"
               src={node.data.target.fields.file["en-US"].url}
-              alt="blog image"
+              alt="blog "
             />
             <p>images provided by johon doe</p>
           </div>

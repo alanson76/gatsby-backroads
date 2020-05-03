@@ -13,7 +13,7 @@ import StyledHero from "../components/StyledHero"
 
 const blogListTemplate = props => {
   const { data } = props
-  const { currentPage, numPages, limit, skip } = props.pageContext
+  const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage =
