@@ -13,12 +13,12 @@ module.exports = {
     description:
       "Explore awesome worldwide tours & discover what makes each of them uniquie. Forget your daily routine & say yes to adventure",
     author: "@Alan",
-    data: {
-      name: "Alan Son",
-      age: 43,
-    },
+    twitteUsername: "@alanson76",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://alanson-gatsby-backroads.netlify.app",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

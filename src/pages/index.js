@@ -9,10 +9,13 @@ import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from "../components/SEO"
+
 
 export default ({ data }) => (
   <React.Fragment>
     <Layout>
+      <SEO title="Home | BackRoads" description="backroads homepage" />
       <StyledHero img={data.defaultBcg.childImageSharp.fluid} home="true">
         <Banner
           title="continue exploring"
