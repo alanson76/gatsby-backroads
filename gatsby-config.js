@@ -14,7 +14,7 @@ module.exports = {
       "Explore awesome worldwide tours & discover what makes each of them uniquie. Forget your daily routine & say yes to adventure",
     author: "@Alan",
     data: {
-      name: "Alan",
+      name: "Alan Son",
       age: 43,
     },
   },
@@ -33,12 +33,13 @@ module.exports = {
         // Learn about environment variables: https://gatsby.app/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         downloadLocal: true,
-      }
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-transition-link`
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
   ],
 }
