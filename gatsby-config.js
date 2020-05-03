@@ -14,7 +14,7 @@ module.exports = {
       "Explore awesome worldwide tours & discover what makes each of them uniquie. Forget your daily routine & say yes to adventure",
     author: "@Alan",
     twitteUsername: "@alanson76",
-    image: "/defaultBcg.jpeg",
+    image: "/images/defaultBcg.jpeg",
     siteUrl: "https://alanson-gatsby-backroads.netlify.app",
   },
   plugins: [
