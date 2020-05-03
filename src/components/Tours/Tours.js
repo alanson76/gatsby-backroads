@@ -18,7 +18,7 @@ const getTours = graphql`
           days
           images {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
@@ -30,11 +30,7 @@ const getTours = graphql`
 const Tours = () => {
   const { tours } = useStaticQuery(getTours)
 
-  return (
-
-      <TourList tours={tours} />
-   
-  )
+  return <TourList tours={tours} />
 }
 
 export default Tours
