@@ -10,6 +10,7 @@ import Layout from "../components/Layout"
 import BlogCard from "../components/Blog/BlogCard"
 import Title from "../components/Title"
 import StyledHero from "../components/StyledHero"
+import SEO from "../components/SEO"
 
 const blogListTemplate = props => {
   const { data } = props
@@ -22,6 +23,7 @@ const blogListTemplate = props => {
 
   return (
     <Layout>
+      <SEO title="Blogs | BackRoads" description="backroads Blogs" />
       <StyledHero img={data.posts.edges[0].node.image.fluid} />
       <section className={styles.blog}>
         <Title title="latest" subtitle="posts" />

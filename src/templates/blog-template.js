@@ -10,6 +10,8 @@ import styles from "../css/template.module.css"
 //components
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import SEO from "../components/SEO"
+
 
 const blogTemplate = ({ data }) => {
   const {
@@ -54,6 +56,7 @@ const blogTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={`${title} | BackRoads`} description="backroads Blog" />
       <section className={styles.template}>
         <StyledHero img={image.fluid} />
         <div className={styles.center}>
